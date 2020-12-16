@@ -1,0 +1,35 @@
+{
+  "name": "superquest",
+  "version": "1.0.0",
+  "description": "online text game",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "eslint": "eslint js/",
+    "test": "jest"
+  },
+  "author": "Max Ivanov",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@types/jest": "^26.0.16",
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "eslint": "3.19.0",
+    "eslint-config-htmlacademy": "0.2.x",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-better-rollup": "^4.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "jest": "^26.6.3",
+    "rollup": "^1.32.1"
+  }
+}
