@@ -8,3 +8,24 @@
     background-color: #292929;
   }
 }
+
+
+@media (min-width: $tablet) {
+  .page-footer {
+    width: auto;
+    margin: 0;
+
+    &__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding: 50px 64px 59px 64px;
+      width: 768px;
+    }
+
+    &__social {
+      order: 1;
+    }
+  }
+}
