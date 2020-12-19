@@ -1,0 +1,42 @@
+@mixin list-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin hit-label {
+  box-sizing: border-box;
+  z-index: 1;
+  content: "Работа месяца";
+  position: absolute;
+  padding: 13px 10px 10px 26px;
+  width: 168px;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #826550;
+}
+
+@mixin hit-label-flag-right {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  border: 25px solid transparent;
+  border-left-width: 0;
+  border-right-width: 8px;
+  border-top-color: #826550;
+  border-bottom-color: #826550;
+}
+
+@mixin hit-label-flag-left {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  border: 25px solid transparent;
+  border-right-width: 0;
+  border-left-width: 8px;
+  border-top-color: #826550;
+  border-bottom-color: #826550;
+}
