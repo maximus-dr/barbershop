@@ -111,3 +111,80 @@
     }
   }
 }
+
+
+@media (min-width: $tablet) {
+  .advantages {
+    width: auto;
+    margin: 0;
+    margin-top: -359px;
+
+    &__wrap {
+      padding-top: 359px;
+      width: 768px;
+      margin: 0 auto;
+      background-color: #242424;
+
+      &::after {
+        bottom: -84px;
+        border-top-width: 42px;
+        border-bottom-width: 42px;
+        border-left-width: 384px;
+        border-right-width: 384px;
+      }
+    }
+
+    &__list {
+      margin: 0 auto;
+      width: 640px;
+    }
+
+    &__item {
+      position: relative;
+      padding: 40px 30px 40px 160px;
+      background-position: 31px 44px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 36px;
+        width: 568px;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    &__item:last-child {
+      padding-bottom: 44px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__item--cool,
+    &__item--expensive {
+      display: block;
+    }
+
+    &__title {
+      padding: 0;
+      font-size: 30px;
+      line-height: 30px;
+      text-align: left;
+    }
+
+    &__text {
+      padding: 0;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: left;
+    }
+
+    &__toggles {
+      display: none;
+    }
+  }
+}
