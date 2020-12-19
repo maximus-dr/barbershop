@@ -28,3 +28,33 @@
     height: 30px;
   }
 }
+
+
+@media (min-width: $tablet) {
+  .page-header {
+
+    .page-header__wrap {
+      width: 768px;
+      min-height: 470px;
+      background: #000000 url("../img/header-bg-tablet.jpg") no-repeat center;
+    }
+
+    .page-header__logo {
+      order: 2;
+      padding: 39px 0 257px 0;
+      background: none;
+    }
+
+    .page-header__logo-link {
+      width: 370px;
+      height: 101px;
+      margin: 0 auto;
+      padding-left: 6px;
+    }
+
+    .page-header__logo-img {
+      width: 370px;
+      height: 101px;
+    }
+  }
+}

@@ -80,7 +80,6 @@ function serve() {
   });
   gulp.watch('src/js/**/*.js', js);
   gulp.watch('src/fonts/**/*', fonts);
-  gulp.watch('src/img/**/*', img);
 }
 
 function clean() {

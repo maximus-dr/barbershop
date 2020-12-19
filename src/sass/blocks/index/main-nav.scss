@@ -82,3 +82,113 @@
     }
   }
 }
+
+
+@media (min-width: $tablet) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+    background: #000000;
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 64px;
+      width: 768px;
+      margin: 0 auto;
+      background-color: #000000;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: flex-start;
+      flex-wrap: wrap;
+      width: 570px;
+    }
+
+    &__item {
+      display: block;
+      margin-right: 34px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      display: inline-block;
+      width: auto;
+      padding: 25px 0 23px 0;
+      background: none;
+      border: none;
+
+      &:hover {
+        border: none;
+        color: #826550;
+        background-color: #000000;
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    &__item--active {
+
+      .main-nav__link-wrap {
+        position: relative;
+      }
+
+      .main-nav__link-wrap::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -26px;
+        width: 100%;
+        height: 3px;
+        background-color: #826550;
+      }
+    }
+
+    &__item--active .main-nav__link {
+      &:hover {
+        cursor: default;
+        color: #ffffff;
+        border: none;
+        background: #000000;
+      }
+    }
+
+    &__user {
+      display: block;
+      background: none;
+    }
+
+    &__login {
+      padding: 25px 0 23px 0;
+      width: 60px;
+      font-size: 0;
+
+      &::before {
+        top: 29px;
+        left: 11px;
+        background: url("../img/icons/login-tablet.svg") no-repeat 0 0;
+        opacity: 0.3;
+      }
+
+      &:hover::before {
+        background: url("../img/icons/login-tablet-hover.svg") no-repeat 0 0;
+        opacity: 1;
+      }
+
+      &:active::before {
+        background: url("../img/icons/login-tablet-down.svg") no-repeat 0 0;
+        opacity: 1;
+      }
+    }
+  }
+}
