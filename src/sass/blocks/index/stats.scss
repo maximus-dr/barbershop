@@ -92,3 +92,93 @@
     line-height: 27px;
   }
 }
+
+
+@media (min-width: $tablet) {
+  .stats {
+    margin-top: -193px;
+    width: 640px;
+
+    &__header {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 27px;
+        left: -15px;
+        border: 15px solid transparent;
+        border-bottom-color: #ffffff;
+        transform: rotate(45deg);
+      }
+    }
+
+    &__title {
+      margin: 0;
+      padding: 30px 40px 12px 40px;
+      width: 320px;
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: bold;
+      text-align: left;
+      text-transform: none;
+    }
+
+    &__intro {
+      margin: 0;
+      padding: 36px 80px 13px 32px;
+      width: 320px;
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    &__note--top {
+      margin: 0;
+      padding: 0 40px 27px 40px;
+      width: 320px;
+      display: block;
+      font-size: 20px;
+      line-height: 27px;
+      color: rgba(0, 0, 0, 0.3);
+      background-color: #ffffff;
+    }
+
+    &__note--bottom {
+      display: none;
+    }
+
+    &__table tbody {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__row {
+      padding: 25px 35px 28px 35px;
+      width: 50%;
+    }
+
+    &__value,
+    &__field {
+      display: block;
+      padding: 0;
+      width: auto;
+      text-align: left;
+    }
+
+    &__value {
+      padding-bottom: 7px;
+      font-size: 72px;
+      line-height: 72px;
+      font-weight: bold;
+    }
+
+    &__field {
+      font-size: 20px;
+      line-height: 27px;
+      font-weight: normal;
+      color: #f7f4f1;
+    }
+  }
+}
