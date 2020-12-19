@@ -110,3 +110,127 @@
     display: none;
   }
 }
+
+
+@media (min-width: $tablet) {
+  .reviews {
+    width: auto;
+    margin: 0;
+
+    &__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 37px 64px 50px 64px;
+      margin: 0 auto;
+      width: 768px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__title {
+      margin: 0;
+      width: 400px;
+      font-size: 40px;
+      line-height: 40px;
+      text-align: left;
+    }
+
+    &__add,
+    &__btn {
+      display: block;
+    }
+
+    &__add {
+      margin-left: auto;
+      padding: 12px;
+      width: 160px;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: bold;
+      color: #000000;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid #e5ddd5;
+
+      &:hover {
+        border-color: #d5c9bd;
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+        background-color: #d5c9bd;
+      }
+    }
+
+    &__list {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 36px;
+      width: 640px;
+    }
+
+    &__btn {
+      cursor: pointer;
+      padding: 0;
+      width: 50px;
+      font-size: 0;
+      line-height: 0;
+      border: 1px solid #e5ddd5;
+      outline: none;
+      background: #f8f5f2 url("../img/icons/reviews-arrow.svg") no-repeat 50% 50%;
+
+      &:hover {
+        border-color: #d5c9bd;
+      }
+
+      &:active {
+        background-color: #d5c9bd;
+      }
+
+      &--next {
+        background: #f8f5f2 url("../img/icons/reviews-arrow-next.svg") no-repeat 50% 50%;
+      }
+    }
+
+    &__item {
+      margin: 0;
+      padding: 0;
+      padding-top: 30px;
+      width: 540px;
+      border-top: 1px solid #e5ddd5;
+      border-bottom: 1px solid #e5ddd5;
+    }
+
+    &__avatar {
+      top: 38px;
+      left: 30px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    &__author {
+      margin-left: 141px;
+      font-size: 24px;
+      line-height: 27px;
+    }
+
+    &__text {
+      padding: 10px 50px 34px 140px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    &__toggles {
+      z-index: 1;
+      margin-top: -22px;
+      padding: 18px 25px;
+      width: 126px;
+      background-color: #f8f5f2;
+    }
+  }
+}
