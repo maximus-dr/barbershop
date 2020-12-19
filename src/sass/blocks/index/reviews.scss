@@ -1,0 +1,112 @@
+.reviews {
+
+  &__wrap {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 26px 20px 0 20px;
+    width: 320px;
+    background-color: #f8f5f2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -68px;
+      border: 34px solid transparent;
+      border-top-color: #f8f5f2;
+      border-left-width: 160px;
+      border-right-width: 160px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 29px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    position: relative;
+    margin: 0;
+    width: 280px;
+  }
+
+  &__avatar {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 50px;
+    height: auto;
+    background-size: cover;
+  }
+
+  &__author {
+    margin-left: 72px;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 7px 0 10px 71px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__toggles {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 18px 0;
+    width: 76px;
+  }
+
+  &__toggle {
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    font-size: 0;
+    line-height: 0;
+    border: 2px solid #353535;
+    outline: none;
+    background: none;
+    transform: rotate(45deg);
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--active {
+      cursor: default;
+      border: 2px solid #353535;
+      background-color: #353535;
+      opacity: 1;
+
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__add,
+  &__btn,
+  &__item--john,
+  &__item--ivan {
+    display: none;
+  }
+}

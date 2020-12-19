@@ -1,0 +1,35 @@
+.copyright {
+  padding: 28px 20px 24px 20px;
+  color: #ffffff;
+  text-align: center;
+
+  &__text {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: normal;
+  }
+
+  &__link {
+    display: block;
+    margin-top: 12px;
+    padding: 11px 12px 13px 12px;
+    width: 280px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:hover {
+      border-color: #545454;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #252525;
+      border-color: #252525;
+    }
+  }
+}

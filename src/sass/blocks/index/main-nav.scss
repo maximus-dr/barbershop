@@ -1,0 +1,84 @@
+.main-nav {
+  position: relative;
+  z-index: 3;
+  width: 320px;
+  margin: 0 auto;
+  background-color: $nav-bg;
+
+  &__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 0;
+    line-height: 0;
+    background: $nav-toggle-bg url("../img/icons/menu-icon.svg") no-repeat 17px 15px;
+
+    &:hover,
+    &:active {
+      background-color: $nav-hover-bg;
+    }
+
+    &:active {
+      background-image: url("../img/icons/menu-icon-down.svg");
+    }
+  }
+
+  &__list {
+    @include list-style;
+    font-weight: bold;
+  }
+
+  &__link {
+    display: block;
+    padding: 12px 21px 13px 21px;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    border-top: 1px solid #886e5b;
+    background-color: $nav-bg;
+  }
+
+  &__item {
+    display: none;
+
+    &--active {
+      position: relative;
+      display: block;
+    }
+  }
+
+  &__user {
+    display: none;
+    background-color: $nav-user-bg;
+  }
+
+  &__login {
+    position: relative;
+    display: block;
+    padding: 14px 20px 14px 49px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 20px;
+      width: 16px;
+      height: 16px;
+      background: url("../img/icons/login-mobile.svg") no-repeat 0 0;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.advantages {
+  width: 320px;
+  margin: 0 auto;
+
+  &__wrap {
+    position: relative;
+    background-color: #242424;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -68px;
+      left: 0;
+      width: 0;
+      border: 34px solid transparent;
+      border-left-width: 160px;
+      border-right-width: 160px;
+      border-top-color: #242424;
+    }
+  }
+
+  &__list {
+    @include list-style;
+  }
+
+  &__item {
+    padding-top: 145px;
+    background-color: #242424;
+    background-repeat: no-repeat;
+    background-position: center 22px;
+  }
+
+  &__item--fast {
+    background-image: url("../img/advantages/advantage-1.svg");
+  }
+
+  &__item--cool {
+    background-image: url("../img/advantages/advantage-2.svg");
+  }
+
+  &__item--expensive {
+    background-image: url("../img/advantages/advantage-3.svg");
+  }
+
+  &__item--cool,
+  &__item--expensive {
+    display: none;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 14px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f7f4f1;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0 40px 16px 40px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: normal;
+    text-align: center;
+    color: #f7f4f1;
+  }
+
+  &__toggles {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 13px 0;
+    width: 76px;
+  }
+
+  &__toggle {
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    font-size: 0;
+    line-height: 0;
+    border: 2px solid #ffffff;
+    outline: none;
+    background: none;
+    transform: rotate(45deg);
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--active {
+      cursor: default;
+      border: 2px solid #ffffff;
+      background-color: #ffffff;
+      opacity: 1;
+
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+}

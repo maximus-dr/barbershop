@@ -1,0 +1,195 @@
+.login {
+  overflow: hidden;
+  position: fixed;
+  z-index: 4;
+  top: 135px;
+  left: auto;
+  right: auto;
+  margin: 0 auto;
+  padding-bottom: 100px;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  &__wrap {
+    padding: 32px 20px 37px;
+    width: 320px;
+    background-color: #f8f5f2;
+    box-shadow: 0px 30px 50px 0 rgba(0, 0, 0, 0.75);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 23px;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    position: relative;
+    margin-bottom: 6px;
+    padding: 9px 50px 9px 18px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    outline: none;
+    border: 1px solid #e5ddd5;
+
+    &::placeholder {
+      color: #000000;
+    }
+
+    &:hover {
+      border-color: #d5c9bd;
+    }
+
+    &:active {
+      border-color: #999999;
+    }
+
+    &--login {
+      background: #ffffff url("../img/icons/user.png") no-repeat 93.57% center;
+    }
+
+    &--password {
+      margin-bottom: 26px;
+      background: #ffffff url("../img/icons/password.png") no-repeat 93.57% center;
+    }
+  }
+
+  &__label {
+    display: none;
+  }
+
+  &__checkbox-input {
+    display: none;
+  }
+
+  &__checkbox {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    padding: 3px 0 2px 48px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 31px;
+      height: 31px;
+      background: #ffffff;
+      border: 1px solid #e5ddd5;
+    }
+
+    &:hover::before {
+      border: 1px solid #d5c9bd;
+    }
+
+    &:active::before {
+      background-color: #d5c9bd;
+      border-color: #d5c9bd;
+    }
+  }
+
+  &__checkbox-input:checked ~ .login__checkbox::before {
+    background: url("../img/icons/tick.png") no-repeat center center;
+  }
+
+  &__link {
+    margin-top: 2px;
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+
+    &:hover {
+      color: #826550;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 27px;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0;
+    padding: 13px 13px 11px 13px;
+    width: 130px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &--login {
+      color: #ffffff;
+      background-color: #826550;
+
+      &:hover {
+        background-color: #6a4d38;
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    &--close {
+      cursor: pointer;
+      outline: none;
+      margin-left: auto;
+      background-color: #f8f5f2;
+      border: 1px solid #e5ddd5;
+      font-family: inherit;
+
+      &:hover {
+        border-color: #d5c9bd;
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+        border-color: #d5c9bd;
+        background-color: #d5c9bd;
+      }
+    }
+  }
+
+  &__btn-span {
+    display: none;
+  }
+}

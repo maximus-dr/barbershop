@@ -1,0 +1,30 @@
+.page-header {
+
+  .page-header__wrap {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    padding: 29px 44px 26px 50px;
+    background-color: $darkgrey;
+  }
+
+  .page-header__logo-link {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+
+  .page-header__logo-img {
+    width: 226px;
+    height: 30px;
+  }
+}

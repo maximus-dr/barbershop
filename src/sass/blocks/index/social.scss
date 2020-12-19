@@ -1,0 +1,118 @@
+.social {
+  width: 320px;
+
+  &__title {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: nowrap;
+    @include list-style;
+  }
+
+  &__item {
+    width: 33.33%;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 101px;
+    font-size: 0;
+    line-height: 0;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #3f3f3f;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: no-repeat center center;
+    }
+
+    &:active::before {
+      opacity: 0.3;
+    }
+
+    &:hover {
+      border-color: #545454;
+    }
+
+    &:active {
+      background-color: #252525;
+      border-color: #252525;
+      //opacity: 0.3;
+    }
+
+    &--vk::before {
+      background-image: url("../img/icons/social-vk.png");
+    }
+
+    &--fb::before {
+      background-image: url("../img/icons/social-fb.png");
+    }
+
+    &--inst::before {
+      background-image: url("../img/icons/social-inst.svg");
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .social {
+    margin-top: 47px;
+    width: 640px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .social {
+    margin: 0;
+    margin-left: 60px;
+    margin-right: auto;
+    width: 162px;
+
+    &__title {
+      display: block;
+      margin: 0;
+      margin-bottom: 11px;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: normal;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    &__item {
+      width: auto;
+      margin-right: 6px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      width: 50px;
+      height: 50px;
+
+      &--vk::before {
+        background-image: url("../img/icons/social-vk-small.png");
+      }
+
+      &--fb::before {
+        background-image: url("../img/icons/social-fb-small.png");
+      }
+
+      &--inst::before {
+        background-image: url("../img/icons/social-insta-small.png");
+      }
+    }
+  }
+}

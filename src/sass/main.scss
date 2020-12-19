@@ -1,4 +1,16 @@
-@import "common/fonts.scss";
-@import "common/vars.scss";
-@import "common/mixins.scss";
-@import "common/common.scss";
+@import "common/fonts";
+@import "common/vars";
+@import "common/mixins";
+@import "common/common";
+
+@import "blocks/index/page-header";
+@import "blocks/index/main-nav";
+@import "blocks/index/login";
+@import "blocks/index/stats";
+@import "blocks/index/advantages";
+@import "blocks/index/news";
+@import "blocks/index/reviews";
+@import "blocks/index/page-footer";
+@import "blocks/index/contacts";
+@import "blocks/index/social";
+@import "blocks/index/copyright";

@@ -1,0 +1,145 @@
+.news {
+  width: 320px;
+  margin: 0 auto;
+
+  &__wrap {
+    padding: 67px 20px 28px 20px;
+    background-color: #f8f5f2;
+    border-bottom: 1px solid #e5ddd5;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    @include list-style;
+  }
+
+  &__item {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    &:first-child {
+      border-bottom: 1px solid #e5ddd5;
+    }
+  }
+
+  &__item--hidden {
+    display: none;
+  }
+
+  &__content {
+    margin: 0;
+    padding: 0;
+    padding-left: 69px;
+    width: 280px;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+  }
+
+  &__text {
+    position: relative;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+
+    &:hover {
+      color: #826550;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: #6a4d38;
+    }
+
+    &:hover .news__date {
+      background-color: #826550;
+
+      &::after {
+        border-top-color: #826550;
+      }
+    }
+
+    &:active .news__date {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #6a4d38;
+
+      &::after {
+        border-top-color: #6a4d38;
+      }
+    }
+
+    &:active .news__day {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &__date {
+    position: absolute;
+    top: 11px;
+    left: -69px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    display: block;
+    width: 50px;
+    font-size: 16px;
+    line-height: 11px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #000000;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -22px;
+      left: 0;
+      border: 11px solid transparent;
+      border-left-width: 25px;
+      border-right-width: 25px;
+      border-top-color: #000000;
+    }
+  }
+
+  &__day {
+    display: block;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &__all {
+    display: block;
+    margin-top: 4px;
+    padding: 12px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #e5ddd5;
+
+    &:hover {
+      border-color: #d5c9bd;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0,3);
+      background-color: #d5c9bd;
+    }
+  }
+}
