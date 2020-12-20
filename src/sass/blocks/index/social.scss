@@ -70,3 +70,50 @@
     width: 640px;
   }
 }
+
+
+@media (min-width: $desktop) {
+  .social {
+    margin: 0;
+    margin-left: 60px;
+    margin-right: auto;
+    width: 162px;
+
+    &__title {
+      display: block;
+      margin: 0;
+      margin-bottom: 11px;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: normal;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    &__item {
+      width: auto;
+      margin-right: 6px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      width: 50px;
+      height: 50px;
+
+      &--vk::before {
+        background-image: url("../img/icons/social-vk-small.png");
+      }
+
+      &--fb::before {
+        background-image: url("../img/icons/social-fb-small.png");
+      }
+
+      &--inst::before {
+        background-image: url("../img/icons/social-insta-small.png");
+      }
+    }
+  }
+}

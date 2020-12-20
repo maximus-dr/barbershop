@@ -29,3 +29,18 @@
     }
   }
 }
+
+
+@media (min-width: $desktop) {
+  .page-footer {
+
+    &__wrap {
+      padding: 50px 120px 60px 120px;
+      width: 1200px;
+    }
+
+    &__social {
+      order: 0;
+    }
+  }
+}
