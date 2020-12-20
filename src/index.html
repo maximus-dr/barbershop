@@ -194,7 +194,11 @@
         <div class="reviews__list">
           <button class="reviews__btn reviews__btn--prev" type="button">Предыдущий</button>
           <blockquote class="reviews__item review__item--travis">
-            <img class="reviews__avatar" src="img/reviews/travis.jpg" width="50" height="49" alt="Фото Трэвиса Баркера">
+            <picture>
+              <source media="(min-width: 1040px" )="" srcset="img/reviews/travis-desktop.jpg">
+              <source media="(min-width: 710px)" srcset="img/reviews/travis-tablet.jpg">
+              <img class="reviews__avatar" src="img/reviews/travis.jpg" width="50" height="49" alt="Фото Трэвиса Баркера">
+            </picture>
             <cite class="reviews__author">Трэвис Баркер</cite>
             <p class="reviews__text">
               Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
