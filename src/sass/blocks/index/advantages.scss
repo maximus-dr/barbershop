@@ -188,3 +188,64 @@
     }
   }
 }
+
+
+@media (min-width: $desktop) {
+  .advantages {
+    margin-top: -173px;
+
+    &__wrap {
+      margin: 0 auto;
+      padding-top: 173px;
+      width: 1200px;
+
+      &::after {
+        bottom: -128px;
+        border-left-width: 600px;
+        border-right-width: 600px;
+        border-top-width: 64px;
+        border-bottom-width: 64px;
+      }
+    }
+
+    &__list {
+      display: flex;
+      margin: 0 auto;
+      width: 960px;
+    }
+
+    &__item {
+      padding: 0;
+      padding-top: 203px;
+      width: 320px;
+      background-position: center 78px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      &::after {
+        top: 79px;
+        right: -1px;
+        left: auto;
+        bottom: auto;
+        width: 1px;
+        height: 268px;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    &__text {
+      padding: 0 40px 40px 40px;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: center;
+    }
+  }
+}

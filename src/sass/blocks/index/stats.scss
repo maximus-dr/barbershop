@@ -182,3 +182,35 @@
     }
   }
 }
+
+
+@media (min-width: $desktop) {
+  .stats {
+    display: flex;
+    width: 960px;
+    margin-top: -174px;
+
+    .stats__header {
+      display: block;
+      width: 320px;
+
+      &::before {
+        top: 22px;
+      }
+    }
+
+    &__intro {
+      padding: 30px 70px 30px 44px;
+    }
+
+    &__asterisk {
+      top: -0.6em;
+      left: 14px;
+      font-size: 42px;
+    }
+
+    .stats__table {
+      width: 640px;
+    }
+  }
+}
