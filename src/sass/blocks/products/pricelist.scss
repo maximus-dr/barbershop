@@ -100,3 +100,18 @@
     }
   }
 }
+
+
+@media (min-width: $desktop) {
+  .pricelist {
+    margin: 0;
+    width: 630px;
+
+    &__cell {
+
+      &--value {
+        width: 150px;
+      }
+    }
+  }
+}

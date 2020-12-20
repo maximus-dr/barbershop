@@ -48,3 +48,18 @@
     }
   }
 }
+
+
+@media (min-width: $desktop) {
+  .price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 82px 120px 83px 120px;
+    width: 1200px;
+
+    &__title {
+      width: 100%;
+    }
+  }
+}

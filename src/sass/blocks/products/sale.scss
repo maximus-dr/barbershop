@@ -19,3 +19,22 @@
     background: url("../img/products/clock-tablet.png") no-repeat 25px 20px;
   }
 }
+
+
+@media (min-width: $desktop) {
+  .sale {
+    padding: 199px 0 20px 0;
+    width: 270px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: normal;
+    text-transform: none;
+    text-align: center;
+    background: url("../img/products/clock-desktop.png") no-repeat center 34px;
+
+    &__text {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+}
