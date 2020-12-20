@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Барбершоп "Бородинский"</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+</head>
+
+<body>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="page-header__wrap">
+      <div class="page-header__logo">
+        <a class="page-header__logo-link">
+          <picture>
+            <source media="(min-width: 1040px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 710px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский">
+          </picture>
+        </a>
+      </div>
+
+      <!-- MAIN-NAV section -->
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__wrap">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html"><span class="main-nav__link-wrap">Главная</span></a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link"><span class="main-nav__link-wrap">Наши работы</span></a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html"><span class="main-nav__link-wrap">Записаться</span></a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#contacts"><span class="main-nav__link-wrap"></span>Контакты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru"><span class="main-nav__link-wrap">HTML academy</span></a>
+            </li>
+          </ul>
+          <div class="main-nav__user">
+            <a class="main-nav__login" href="#">Войти</a>
+          </div>
+        </div>
+      </nav>
+      <!-- MAIN-NAV section END -->
+
+      <!-- LOGIN section -->
+      <section class="login login--closed">
+        <div class="login__wrap">
+          <h2 class="login__title">Личный кабинет</h2>
+          <p class="login__subtitle">Введите свой логин и пароль, чтобы войти</p>
+          <form class="login__form" method="post" action="https://echo.htmlacademy.ru">
+            <input class="login__input login__input--login" type="text" name="login" id="login" placeholder="Логин">
+            <input class="login__input login__input--password" type="password" name="password" id="password" placeholder="Пароль">
+            <label class="login__label" for="login-input">Логин</label>
+            <label class="login__label" for="password">Пароль</label>
+            <input class="login__checkbox-input" type="checkbox" name="remember" id="remember">
+            <label class="login__checkbox" for="remember">Запомните меня</label>
+            <a class="login__link" href="#">Я забыл пароль!</a>
+          </form>
+          <div class="login__buttons">
+            <a class="login__btn login__btn--login" href="#">Войти<span class="login__btn-span"> в личный кабинет</span></a>
+            <button class="login__btn login__btn--close" type="button">Закрыть</button>
+          </div>
+        </div>
+      </section>
+      <!-- LOGIN section END -->
+    </div>
+  </header>
+  <!-- PAGE-HEADER END -->
+
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- PRODUCTS section -->
+    <section class="products">
+      <div class="products__title-wrap">
+        <h2 class="products__title">Наши работы</h2>
+        <a class="products__home-btn home-btn" href="index.html">На главную</a>
+      </div>
+
+      <div class="products__list">
+        <!-- CARD section -->
+        <section class="card card--one card--hit products__item">
+          <picture class="card__picture">
+            <img class="card__img" src="img/products/photo-1-mobile.jpg" width="280" height="480" alt="Лжепётр Мчиславский">
+          </picture>
+          <div class="card__description">
+            <h3 class="card__title">Лжепётр Мчиславский</h3>
+            <p class="card__text">
+              Где я только не стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!
+            </p>
+            <ul class="card__options">
+              <li class="card__option card__option--haircut">
+                <span class="card__option-type">Стрижка</span>
+              </li>
+              <li class="card__option card__option--shavering">
+                <span class="card__option-type">Бритье</span>
+              </li>
+              <li class="card__option card__option--mustache">
+                <span class="card__option-type">Усы</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- CARD section END -->
+
+        <!-- CARD section -->
+        <section class="card card--two products__item">
+          <picture class="card__picture">
+            <img class="card__img" src="img/products/photo-2-mobile.jpg" width="280" height="176" alt="Саша Мальцев">
+          </picture>
+          <div class="card__description">
+            <h3 class="card__title">Саша Мальцев</h3>
+            <p class="card__text">
+              Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
+            </p>
+            <ul class="card__options">
+              <li class="card__option card__option--haircut">
+                <span class="card__option-type">Стрижка</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- CARD section END -->
+
+        <!-- CARD section -->
+        <section class="card card--three products__item">
+          <picture class="card__picture">
+            <img class="card__img" src="img/products/photo-3-mobile.jpg" width="280" height="176" alt="Владимир Иваныч">
+          </picture>
+          <div class="card__description">
+            <h3 class="card__title">Владимир Иваныч</h3>
+            <p class="card__text">
+              К зимнему сезону — готов!
+            </p>
+            <ul class="card__options">
+              <li class="card__option card__option--beard">
+                <span class="card__option-type">Борода</span>
+              </li>
+              <li class="card__option card__option--mustache">
+                <span class="card__option-type">Усы</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- CARD section END -->
+
+        <!-- CARD section -->
+        <section class="card card--four products__item">
+          <picture class="card__picture">
+            <img class="card__img" src="img/products/photo-4-mobile.jpg" width="280" height="176" alt="Винстон Синий">
+          </picture>
+          <div class="card__description">
+            <h3 class="card__title">Винстон Синий</h3>
+            <p class="card__text">
+              Как только заростаю и волосы начинают мешать видеть — бегом в&nbsp;Бородинский!
+            </p>
+            <ul class="card__options">
+              <li class="card__option card__option--haircut">
+                <span class="card__option-type">Стрижка</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- CARD section END -->
+      </div>
+    </section>
+    <!-- PRODUCTS section END -->
+
+    <!-- PRICE section -->
+    <section class="price">
+      <h2 class="price__title">Прейскурант</h2>
+
+      <table class="pricelist price__table ">
+        <tr class="pricelist__row">
+          <td class="pricelist__cell pricelist__cell--number">1</td>
+          <td class="pricelist__cell pricelist__cell--field">
+            Классическая стрижка<br><span class="pricelist__note">(с мытьём головы)</span>
+          </td>
+          <td class="pricelist__cell pricelist__cell--option">с мытьём головы</td>
+          <td class="pricelist__cell pricelist__cell--value">1 500 руб.</td>
+        </tr>
+        <tr class="pricelist__row">
+          <td class="pricelist__cell pricelist__cell--number">2</td>
+          <td class="pricelist__cell pricelist__cell--field">
+            Современный вариант<br><span class="pricelist__note">(с мытьём головы)</span>
+          </td>
+          <td class="pricelist__cell pricelist__cell--option">с мытьём головы</td>
+          <td class="pricelist__cell pricelist__cell--value">1 500 руб.</td>
+        </tr>
+        <tr class="pricelist__row">
+          <td class="pricelist__cell pricelist__cell--number">3</td>
+          <td class="pricelist__cell pricelist__cell--field">
+            Индивидуальный подход<br><span class="pricelist__note">(с мытьём головы)</span>
+          </td>
+          <td class="pricelist__cell pricelist__cell--option">с мытьём головы</td>
+          <td class="pricelist__cell pricelist__cell--value">2 000 руб.</td>
+        </tr>
+        <tr class="pricelist__row">
+          <td class="pricelist__cell pricelist__cell--number">4</td>
+          <td class="pricelist__cell pricelist__cell--field">
+            Бритьё головы<br><span class="pricelist__note">(без мытья)</span>
+          </td>
+          <td class="pricelist__cell pricelist__cell--option">без мытья</td>
+          <td class="pricelist__cell pricelist__cell--value">500 руб.</td>
+        </tr>
+        <tr class="pricelist__row">
+          <td class="pricelist__cell pricelist__cell--number">5</td>
+          <td class="pricelist__cell pricelist__cell--field">
+            Бритьё головы<br><span class="pricelist__note">(с мытьём головы)</span>
+          </td>
+          <td class="pricelist__cell pricelist__cell--option">с мытьём головы</td>
+          <td class="pricelist__cell pricelist__cell--value">1 000 руб.</td>
+        </tr>
+      </table>
+
+      <div class="sale price__sale">
+        <p class="sale__text">C 10:00 до 14:00 скидка 20%</p>
+      </div>
+
+    </section>
+    <!-- PRICE section END -->
+  </main>
+  <!-- MAIN END -->
+
+
+  <!-- PAGE FOOTER -->
+  <footer class="page-footer">
+    <div class="page-footer__wrap">
+      <div class="page-footer__contacts contacts contacts--products" id="contacts">
+        <b class="contacts__title">Барбершоп Бородинский</b>
+        <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+        <a class="contacts__phone" href="tel:+78125556666"><span class="contacts__phone-caption">Тел.: </span>+7 (812) 555-66-66</a>
+      </div>
+      <div class="page-footer__social social">
+        <p class="social__title">Давайте дружить!</p>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">Мы в ВКонтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--inst" href="#">Мы в Инстаграм</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru">HTML academy</a>
+      </div>
+    </div>
+  </footer>
+  <!-- PAGE FOOTER END -->
+
+</body>
+</html>
