@@ -37,3 +37,66 @@
     font-weight: normal;
   }
 }
+
+
+@media (min-width: $tablet) {
+  .pricelist {
+    padding: 0;
+    margin-bottom: 9px;
+
+    &__row {
+      margin: 0;
+    }
+
+    &__cell {
+      padding: 0;
+      padding-top: 13px;
+      padding-bottom: 14px;
+      text-align: left;
+      border: 1px solid #4a4a4a;
+      border-bottom-width: 0;
+      border-right-width: 0;
+
+      &:last-child {
+        border-right-width: 1px;
+      }
+
+      &--number,
+      &--option {
+        display: block;
+      }
+
+      &--number {
+        width: 70px;
+        color: rgba(255, 255, 255, 0.3);
+        text-align: center;
+      }
+
+      &--field {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 250px;
+      }
+
+      &--option {
+        padding-left: 20px;
+        padding-right: 5px;
+        width: 160px;
+      }
+
+      &--value {
+        padding-left: 21px;
+        padding-right: 21px;
+        width: 160px;
+      }
+    }
+
+    &__row:last-child td {
+      border-bottom-width: 1px;
+    }
+
+    &__note {
+      display: none;
+    }
+  }
+}

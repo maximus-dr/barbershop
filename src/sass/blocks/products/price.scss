@@ -29,3 +29,22 @@
     text-transform: uppercase;
   }
 }
+
+
+@media (min-width: $tablet) {
+  .price {
+    padding: 90px 64px 56px 64px;
+    width: 768px;
+
+    &::after {
+      display: none;
+    }
+
+    &__title {
+      margin-bottom: 54px;
+      font-size: 40px;
+      line-height: 30px;
+      text-align: left;
+    }
+  }
+}

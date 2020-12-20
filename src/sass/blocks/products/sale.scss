@@ -7,3 +7,15 @@
     margin: 0;
   }
 }
+
+
+@media (min-width: $tablet) {
+  .sale {
+    padding: 41px 23px 43px 185px;
+    font-size: 30px;
+    line-height: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: url("../img/products/clock-tablet.png") no-repeat 25px 20px;
+  }
+}
