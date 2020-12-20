@@ -1,0 +1,39 @@
+.pricelist {
+  display: block;
+  padding: 0;
+  padding-bottom: 27px;
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  font-size: 20px;
+  line-height: 27px;
+
+  tbody {
+    display: block;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__cell {
+    &--number,
+    &--option {
+      display: none;
+    }
+
+    &--field {
+      font-weight: bold;
+    }
+  }
+
+  &__note {
+    font-weight: normal;
+  }
+}

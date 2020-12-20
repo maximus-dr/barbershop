@@ -1,0 +1,31 @@
+.price {
+  position: relative;
+  margin: 0 auto;
+  padding: 70px 20px 19px 20px;
+  width: 320px;
+  color: #ffffff;
+  background-color: #353535;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -68px;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    border: 34px solid transparent;
+    border-left-width: 160px;
+    border-right-width: 160px;
+    border-top-color: #353535;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 22px;
+    font-size: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

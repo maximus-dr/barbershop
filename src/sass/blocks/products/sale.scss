@@ -1,0 +1,9 @@
+.sale {
+  padding: 17px 17px 18px 113px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: url("../img/products/clock.png") no-repeat 19px 15px;
+
+  &__text {
+    margin: 0;
+  }
+}

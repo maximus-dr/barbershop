@@ -3,6 +3,7 @@
 @import "common/mixins";
 @import "common/common";
 
+// INDEX PAGE
 @import "blocks/index/page-header";
 @import "blocks/index/main-nav";
 @import "blocks/index/login";
@@ -14,3 +15,9 @@
 @import "blocks/index/contacts";
 @import "blocks/index/social";
 @import "blocks/index/copyright";
+
+// PRODUCTS PAGE
+@import "blocks/products/products";
+@import "blocks/products/card";
+@import "blocks/products/pricelist";
+@import "blocks/products/price";

@@ -1,0 +1,100 @@
+.card {
+
+  &__picture {
+    position: relative;
+    display: block;
+  }
+
+  &--hit .card__picture {
+    &::before {
+      @include hit-label;
+      bottom: 29px;
+      left: 0;
+    }
+
+    &::after {
+      @include hit-label-flag-right;
+      bottom: 29px;
+      left: 168px;
+    }
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__description {
+    padding-top: 26px;
+    padding-bottom: 15px;
+    border: 1px solid #e5ddd5;
+    border-top-width: 0;
+  }
+
+  &--one .card__description {
+    padding-top: 20px;
+    padding-bottom: 3px;
+  }
+
+  &--three .card__description {
+    padding-top: 24px;
+  }
+
+  &--four .card__description {
+    padding-top: 23px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 13px;
+    padding: 0 23px;
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0 23px 15px 23px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__options {
+    @include list-style;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__option {
+    padding-right: 10px;
+    width: 139px;
+
+    &--haircut {
+      padding-left: 58px;
+      background: url("../img/icons/scissors-icon.svg") no-repeat 22px 4px;
+    }
+
+    &--shavering {
+      padding-left: 55px;
+      background: url("../img/icons/beard-icon.svg") no-repeat 11px 2px;
+    }
+
+    &--mustache {
+      padding-left: 67px;
+      background: url("../img/icons/mustache-icon.svg") no-repeat 10px 8px;
+    }
+
+    &--beard {
+      padding-left: 59px;
+      background: url("../img/icons/beard-icon.svg") no-repeat 18px 2px;
+    }
+  }
+
+  &__option-type {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}
