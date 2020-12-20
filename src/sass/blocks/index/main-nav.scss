@@ -192,3 +192,62 @@
     }
   }
 }
+
+
+@media (min-width: $desktop) {
+  .main-nav {
+
+    &__wrap {
+      padding: 0 120px;
+      width: 1200px;
+    }
+
+    &__list {
+      width: 780px;
+    }
+
+    &__item {
+      margin: 0;
+    }
+
+    &__link {
+      padding-left: 32px;
+      padding-right: 33px;
+
+      &:hover {
+        color: #000000;
+        background-color: #ffffff;
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    &__login {
+      padding: 25px 0 23px 62px;
+      width: 130px;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      &::before {
+        left: 27px;
+      }
+
+      &:hover {
+        color: #000000;
+        background-color: #ffffff;
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+      &:active::before {
+        background: url("../img/icons/login-desktop-down.svg") no-repeat 0 0;
+        opacity: 0.1;
+      }
+    }
+  }
+}

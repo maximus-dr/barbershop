@@ -58,3 +58,31 @@
     }
   }
 }
+
+
+@media (min-width: $desktop) {
+  .page-header {
+
+    .page-header__wrap {
+      width: 1200px;
+      min-height: 720px;
+      background: #000000 url("../img/header-bg-desktop.jpg") no-repeat center;
+      background-size: cover;
+    }
+
+    .page-header__logo {
+      padding-top: 56px;
+    }
+
+    .page-header__logo-link {
+      padding-left: 0;
+      width: 370px;
+      height: 153px;
+    }
+
+    .page-header__logo-img {
+      width: 370px;
+      height: 153px;
+    }
+  }
+}
