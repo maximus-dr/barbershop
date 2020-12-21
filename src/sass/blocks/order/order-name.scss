@@ -1,0 +1,58 @@
+.order-name {
+  margin-bottom: 32px;
+
+  &__input {
+    font-family: inherit;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 6px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .order-name {
+    display: flex;
+    margin-top: 67px;
+    margin-bottom: 35px;
+
+    &__label {
+      display: block;
+      margin: 0;
+      width: 213px;
+
+      &--name {
+        order: -1;
+      }
+
+      &:last-child input {
+        border-right-width: 1px;
+      }
+    }
+
+    &__input {
+      width: 213px;
+      border-right-width: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .order-name {
+    justify-content: space-between;
+
+    &__label {
+      width: 295px;
+    }
+
+    &__input {
+      width: 100%;
+      border-width: 1px;
+    }
+  }
+}

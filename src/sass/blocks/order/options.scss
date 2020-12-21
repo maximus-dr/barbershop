@@ -1,0 +1,135 @@
+.options {
+  padding-top: 40px;
+
+  &__list {
+    @include list-style;
+    margin-bottom: 47px;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 3px 0 3px 60px;
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__label {
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 34px;
+      height: 34px;
+      background-color: #ffffff;
+      border: 1px solid #e5ddd5;
+    }
+
+    &:hover::before {
+      border-color: #d5c9bd;
+    }
+
+    &:active::before {
+      background: #d5c9bd url("../img/icons/tick.png") no-repeat center center;
+      border-color: #d5c9bd;
+    }
+  }
+
+  &__checkbox:checked ~ {
+
+    label::before {
+      background: #ffffff url("../img/icons/tick.png") no-repeat center center;
+    }
+
+    label:active::before {
+      background: #d5c9bd;
+      border-color: #d5c9bd;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .options {
+    position: relative;
+    padding-top: 50px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 66px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #e5ddd5;
+    }
+
+    &__title {
+      margin-bottom: 69px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    &__item {
+      margin-bottom: 47px;
+      width: 50%;
+
+      &--three {
+        order: 1;
+      }
+
+      &--five {
+        order: 2;
+      }
+
+      &--two {
+        order: 3;
+      }
+
+      &--four {
+        order: 4;
+      }
+
+      &--six {
+        order: 5;
+      }
+    }
+
+    &__label {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .options {
+
+    &::before {
+      top: 65px;
+    }
+
+    &__list {
+      margin-bottom: 33px;
+    }
+
+    &__item {
+      width: 320px;
+    }
+  }
+}
